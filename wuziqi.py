@@ -155,7 +155,7 @@ def liveThree(x,y):
             continue
         if(inBoard(x+dx[u]*(i-1),y+dy[u]*(i-1)) and num[x+dx[u]*(i-1)][y+dy[u]*(i-1)]==0):
             continue
-        samekey,i=numofSamekey(x,y,u,1,key,samekey)
+        samekey,i=numofSamekey(x,y,u,-1,key,samekey)
         if(not downOk(x+dx[u]*i,y+dy[u]*i)):
             continue
         if(samekey==3):
